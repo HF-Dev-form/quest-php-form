@@ -52,10 +52,6 @@ if (isset($_POST['sujet'], $_POST['nom'], $_POST['prenom'],$_POST['email'], $_PO
     }
 
 }
-
-/*echo "<pre>";
-print_r($_POST);
-echo "</pre>";*/
 ?>
 <!doctype html>
 <html lang="en">
@@ -73,7 +69,7 @@ echo "</pre>";*/
     <div class="container">
         <h1 class="text-center my-5 col-7 mx-auto bg-dark p-2 text-white rounded shadow-lg">Contactez-nous</h1>
         <form method="post" class="row g-3 mb-5 col-md-8 col-lg-10 col-xl-10 mx-auto my-2">
-            <div class="col-md-6">
+            <div class="col-12 col-md-6">
                 <label for="nom" class="form-label">Nom</label>
                 <input type="text" class="form-control <?php if (isset($errorNom)) {
                     echo $border;
@@ -82,7 +78,7 @@ echo "</pre>";*/
                     echo $errorNom;
                 }?>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <label for="prenom" class="form-label">Prénom</label>
                 <input type="text" class="form-control <?php if (isset($errorPrenom)) {
                     echo $border;
@@ -92,7 +88,7 @@ echo "</pre>";*/
                 }?>
             </div>
 
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <label for="email" class="form-label">Email</label>
                 <input type="text" class="form-control <?php if (isset($errorEmail)) {
                     echo $border;
@@ -102,7 +98,7 @@ echo "</pre>";*/
                 }?>
             </div>
 
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <label for="phone" class="form-label">Numéro de téléphone</label>
                 <input type="text" class="form-control <?php if (isset($errorPhone)) {
                     echo $border;
