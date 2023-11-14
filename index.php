@@ -109,7 +109,7 @@ if (isset($_POST['sujet'], $_POST['nom'], $_POST['prenom'],$_POST['email'], $_PO
             </div>
 
             <div class="col-6">
-                <label for="sujet" class="form-label">Civilité</label>
+                <label for="sujet" class="form-label">Sujet</label>
                 <select class="form-select <?php if (isset($errorSujet)) {
                     echo $border;
                 }?>" id="sujet" name="sujet">
