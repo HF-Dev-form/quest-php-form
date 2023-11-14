@@ -53,9 +53,9 @@ if (isset($_POST['sujet'], $_POST['nom'], $_POST['prenom'],$_POST['email'], $_PO
 
 }
 
-echo "<pre>";
+/*echo "<pre>";
 print_r($_POST);
-echo "</pre>";
+echo "</pre>";*/
 ?>
 <!doctype html>
 <html lang="en">
